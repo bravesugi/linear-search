@@ -1,0 +1,25 @@
+@startuml
+title 線形探索法
+
+note
+    ○整数型: array[], 整数型: length
+    ○整数型: target
+end note
+
+start
+
+:○整数型: i;
+:i ← 0;
+
+while (i < length) is (Yes)
+    if (array[i] = target) then (Yes)
+        :「i番目の要素が一致しました」と出力する;
+        stop
+    else (No)
+        :i ← i + i;
+    endif
+endwhile (No)
+
+:「見つかりませんでした」と出力する;
+stop
+@enduml
